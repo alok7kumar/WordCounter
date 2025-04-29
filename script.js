@@ -23,3 +23,29 @@ function copyText() {
         .then(() => alert('Text copied to clipboard!'))
         .catch(() => alert('Failed to copy text.'));    //If it fails (for example, if clipboard access is denied)
 }
+
+
+
+// What is /\s+/?
+
+// This is a regular expression (regex).
+
+// / ... / → means it's a regex pattern.
+
+// \s → means any whitespace character (space, tab, newline).
+
+// + → means one or more of the previous thing.
+
+// ✅ So /\s+/ means:
+
+// "Split wherever there is one or more spaces (or tabs or newlines)."
+
+
+
+//  What is navigator.clipboard.writeText()?
+
+// It is a modern browser feature to copy text to the user's clipboard.
+
+// ✅ What it does:
+
+// It takes a text (string) and tries to copy it into the clipboard — the place where "Copy-Paste" happens. 
